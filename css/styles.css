@@ -185,8 +185,15 @@ h4 {
     min-width: 344px;
   }
   .navbar__ul {
-    font-size: 14px;
+    font-size: 12px;
     background-color: #ed1b2f;
+
+
+  }
+  .navbar__li a {
+    font-size: 12px;
+    padding: 8px;
+
   }
   #footer {
     grid-template-columns: 1fr;
