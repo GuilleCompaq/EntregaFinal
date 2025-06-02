@@ -1,0 +1,227 @@
+/* Entrega 3 Incluyendo Sass Prueba*/
+/*Importar Variables*/
+.button-whatsapp {
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  background-color: green;
+}
+.button-whatsapp:hover {
+  transform: scale(1.5);
+}
+
+.button-phone {
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  background-color: #ed1b2f;
+}
+.button-phone:hover {
+  transform: scale(1.5);
+}
+
+/* Entrega 1 Css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*dentro de body)*/
+#body {
+  font-family: "Nunito", sans-serif;
+  background-color: gray;
+  margin:0.5rem
+}
+
+#header {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+/*nesting*/
+.navbar {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+.navbar a {
+  color: white;
+  padding: 1rem;
+}
+
+.navbar__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ed1b2f;
+  border-radius: 0.5rem;
+  text-align: justify;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__li {
+  font-size: 18px;
+  list-style: none;
+  display: flex;
+  color: white;
+ }
+.navbar__li:hover {
+  background-color: gray;
+} 
+.main__article {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.main__article--page {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+
+}
+.portada__h1--h1portada {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  color: white;
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0.095), #ed1b2f);
+}
+
+h1 {
+  color: #ed1b2f;
+  background-color: gray;
+  text-align: center;
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+  transform: skew(-5deg);
+  border-radius: 6px;
+}
+
+.h2contacto {
+  padding: 1rem;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+h4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+/*nesting---transform-transicion*/
+.button__testdrive,
+.button_cuotas {
+  background-color: #ed1b2f;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.5rem 2rem;
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.button__testdrive:hover,
+.button_cuotas:hover {
+  color: #ed1b2f;
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.button_cuotas {
+  background-color: #ed1b2f;
+}
+
+.button__contac--section {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: end;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-image: linear-gradient(to top,#ed1b2f, rgba(179, 175, 175, 0.375));
+}
+
+.img-footer {
+  width: 30px;
+}
+
+.fotter-map {
+  width: auto;
+  height: auto;
+}
+
+.fotter__section--h3 {
+  text-align: center;
+}
+
+.fotter-map {
+  justify-content: end;
+}
+
+/*mobile //////////////////////////////////////*/
+@media screen and (max-width: 576px) {
+  #body {
+    min-width: 344px;
+  }
+  .navbar__ul {
+    font-size: 14px;
+    background-color: #ed1b2f;
+  }
+  #footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 1fr);
+    justify-items: center;
+    row-gap: 5px;
+    min-height: 10vh;
+  }
+}
+/* tablet ////////////////////////////////////*/
+@media screen and (min-width: 577px) {
+  .navbar__ul {
+    font-size: 18px;
+    background-color: #ed1b2f;
+  }
+  #footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 2px;
+    min-height: 10vh;
+  }
+}
+/* laptop  */
+@media screen and (min-width: 992px) {
+  .navbar__ul {
+    font-size: 18px;
+    background-color: #ed1b2f;
+  }
+  #footer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    row-gap: 5px;
+    min-height: 10vh;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
