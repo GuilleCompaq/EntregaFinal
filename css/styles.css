@@ -65,13 +65,15 @@
 }
 
 .navbar__li {
-  font-size: 18px;
+  font-size: 16px;
   list-style: none;
   display: flex;
   color: white;
  }
 .navbar__li:hover {
   background-color: gray;
+  font-size: 16px;
+
 } 
 .main__article {
   border: 2px solid rgb(0, 0, 0);
@@ -193,6 +195,13 @@ h4 {
   .navbar__li a {
     font-size: 12px;
     padding: 8px;
+  }
+
+    .navbar__li :hover {
+      background-color: gray;
+      font-size: 12px !important;
+
+    } 
 
   }
   #footer {
@@ -206,7 +215,7 @@ h4 {
 /* tablet ////////////////////////////////////*/
 @media screen and (min-width: 577px) {
   .navbar__ul {
-    font-size: 18px;
+    font-size: 16px;
     background-color: #ed1b2f;
   }
   #footer {
@@ -220,7 +229,7 @@ h4 {
 /* laptop  */
 @media screen and (min-width: 992px) {
   .navbar__ul {
-    font-size: 18px;
+    font-size: 16px;
     background-color: #ed1b2f;
   }
   #footer {
