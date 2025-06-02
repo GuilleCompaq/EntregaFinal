@@ -211,7 +211,7 @@ h4 {
     row-gap: 5px;
     min-height: 10vh;
   }
-}
+
 /* tablet ////////////////////////////////////*/
 @media screen and (min-width: 577px) {
   .navbar__ul {
